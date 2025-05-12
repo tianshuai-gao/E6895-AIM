@@ -38,29 +38,25 @@ Adaptive Intelligent Medical Multi-Agents: a dynamic multi-agent LLM framework s
 
 ## 📂 Repository Structure
 
+```text
 E6895-AIM/
-- LICENSE  
-- README.md  
-- requirements.txt  
-- .gitignore  
+├── data/
+│   ├── medqa.json
+│   ├── pubmedqa.json
+│   └── … (other dataset files)
+├── src/
+│   ├── agents/
+│   │   ├── vision_expert.py
+│   │   ├── difficulty_agent.py
+│   │   └── …
+│   ├── engine/
+│   │   └── discussion_engine.py
+│   ├── utils.py
+│   └── app.py
+├── tests/
+│   └── test_agents.py
+├── requirements.txt
+├── README.md
+└── LICENSE
 
-- src/  
-  - __init__.py  
-  - data/ (put sample images or test data here)  
-  - agents/  
-    - __init__.py  
-    - vision_expert.py     # defines VisionExpert  
-    - difficulty_agent.py  # defines DifficultyAgent  
-    - recruiter.py         # defines Recruiter  
-    - expert_agent.py      # defines ExpertAgent  
-    - challenger_agent.py  # defines ChallengerAgent  
-    - moderator_agent.py   # defines ModeratorAgent  
-  - engine/  
-    - __init__.py  
-    - discussion_engine.py # defines DiscussionEngine  
-  - app.py                 # Gradio interface: start_discussion, next_round_step  
-  - utils.py               # shared helpers (HuggingFace login, model loading, etc.)
-
-- tests/  
-  - test_agents.py         # unit test examples  
 
