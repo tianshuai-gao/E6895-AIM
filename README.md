@@ -99,12 +99,13 @@ python src/app.py \
   --image-path ./data/sample_mri.jpg \
   --question "Is there evidence of hemorrhage?"
 ```
+
 This will print:
--Imaging report
--Complexity label
--Recruited team
--Multi-round discussion logs
--Final answer
+- Imaging report
+- Complexity label
+- Recruited team
+- Multi-round discussion logs
+- Final answer
 
 2. Interactive Gradio Demo
 ```text
