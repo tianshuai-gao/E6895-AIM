@@ -88,3 +88,13 @@ python3 -m venv .venv
 source .venv/bin/activate    # Linux/macOS
 .venv\Scripts\activate       # Windows
 ```
+
+3.Install dependencies
+```text
+pip install -r requirements.txt
+```
+
+4. Login to Hugging Face
+```text
+huggingface-cli login
+```
