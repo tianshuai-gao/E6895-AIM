@@ -45,13 +45,6 @@ E6895-AIM/
 ├── requirements.txt
 ├── .gitignore
 │
-├── data/
-│   └── sample_mri.jpg           # example image for quick test
-│
-├── docs/
-│   └── images/
-│       └── overview.png         # system overview diagram
-│
 ├── src/
 │   ├── __init__.py
 │   ├── utils.py                 # helpers (HF login, model loading)
