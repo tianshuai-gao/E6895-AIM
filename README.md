@@ -117,7 +117,7 @@ Then open your browser at http://localhost:7860 to:
 - Step through each discussion round interactively
 
 ## Configuration
-All key settings live in src/utils.py or can be overridden via environment variables:
+All key settings live in `src/utils.py` or can be overridden via environment variables:
 ```text
 # src/utils.py (example)
 MODEL_LLMT = "ContactDoctor/Bio-Medical-Llama-3-8B"
@@ -131,7 +131,7 @@ export AIM_LLMT_MODEL="gpt-4o-mini"
 export AIM_VLM_MODEL="openai/gpt-4o-vision-preview"
 ```
 
-Adjust max_rounds per complexity:
+Adjust `max_rounds` per complexity:
 | Complexity | Max Rounds | Allow Escalation? |
 |------------|------------|-------------------|
 | low        | 2          | No                |
