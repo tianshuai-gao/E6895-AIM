@@ -8,10 +8,12 @@ Adaptive Intelligent Medical Multi-Agents: a dynamic multi-agent LLM framework s
 
 ## Table of Contents
 
-1. [Features](#features)  
-2. [Repository Structure](#repository-structure)  
+1. [Features](#🌟-features)  
+2. [Repository Structure](#📂-repository-structure)  
 3. [Installation](#installation)  
 4. [Usage](#usage)  
+   1. [Command-Line Demo](#1-command-line-demo)  
+   2. [Interactive Gradio Demo](#2-interactive-gradio-demo)  
 5. [Configuration](#configuration)  
 6. [Examples](#examples)  
 7. [Testing](#testing)  
@@ -139,11 +141,8 @@ Adjust `max_rounds` per complexity:
 | high       | 4          | No                |
 
 Examples
-- Low complexity
-Solo GP agent answers directly.
+- Low complexity: Solo GP agent answers directly.
 
-- Moderate complexity
-2–3 specialist agents discuss, may escalate to deep track.
+- Moderate complexity: 2–3 specialist agents discuss, may escalate to deep track.
 
-- High complexity
-Full MDT + Challenger, up to 4 rounds of debate.
+- High complexity: Full MDT + Challenger, up to 4 rounds of debate.
