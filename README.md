@@ -138,4 +138,12 @@ Adjust `max_rounds` per complexity:
 | moderate   | 2 (→4)     | Yes               |
 | high       | 4          | No                |
 
+Examples
+- Low complexity
+Solo GP agent answers directly.
 
+- Moderate complexity
+2–3 specialist agents discuss, may escalate to deep track.
+
+- High complexity
+Full MDT + Challenger, up to 4 rounds of debate.
