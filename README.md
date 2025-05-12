@@ -106,6 +106,14 @@ This will print:
 -Multi-round discussion logs
 -Final answer
 
+2. Interactive Gradio Demo
+```text
+python -m src.app
+```
+Then open your browser at http://localhost:7860 to:
+- Upload an image
+- Enter a clinical question
+- Step through each discussion round interactively
 
 
 
