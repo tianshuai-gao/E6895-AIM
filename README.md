@@ -39,33 +39,28 @@ Adaptive Intelligent Medical Multi-Agents: a dynamic multi-agent LLM framework s
 ## 📂 Repository Structure
 
 E6895-AIM/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── .gitignore
-│
-├── src/
-│   ├── __init__.py
-│   │
-│   ├── data/
-│   │   └── (如果有本地测试数据、示例图片等，放这里)
-│   │
-│   ├── agents/
-│   │   ├── __init__.py
-│   │   ├── vision_expert.py      # 定义 VisionExpert
-│   │   ├── difficulty_agent.py   # 定义 DifficultyAgent
-│   │   ├── recruiter.py          # 定义 Recruiter
-│   │   ├── expert_agent.py       # 定义 ExpertAgent
-│   │   ├── challenger_agent.py   # 定义 ChallengerAgent
-│   │   └── moderator_agent.py    # 定义 ModeratorAgent
-│   │
-│   ├── engine/
-│   │   ├── __init__.py
-│   │   └── discussion_engine.py  # 定义 DiscussionEngine
-│   │
-│   ├── app.py                    # Gradio 接口：start_discussion, next_round_step
-│   └── utils.py                  # 任何共用 helper，比如登录 HuggingFace、加载模型等
-│
-└── tests/
-    └── test_agents.py           # 单元测试例子
+- LICENSE  
+- README.md  
+- requirements.txt  
+- .gitignore  
+
+- src/  
+  - __init__.py  
+  - data/ (put sample images or test data here)  
+  - agents/  
+    - __init__.py  
+    - vision_expert.py     # defines VisionExpert  
+    - difficulty_agent.py  # defines DifficultyAgent  
+    - recruiter.py         # defines Recruiter  
+    - expert_agent.py      # defines ExpertAgent  
+    - challenger_agent.py  # defines ChallengerAgent  
+    - moderator_agent.py   # defines ModeratorAgent  
+  - engine/  
+    - __init__.py  
+    - discussion_engine.py # defines DiscussionEngine  
+  - app.py                 # Gradio interface: start_discussion, next_round_step  
+  - utils.py               # shared helpers (HuggingFace login, model loading, etc.)
+
+- tests/  
+  - test_agents.py         # unit test examples  
 
