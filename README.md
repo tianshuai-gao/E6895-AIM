@@ -80,3 +80,11 @@ E6895-AIM/
 ```text
 git clone https://github.com/tianshuai-gao/E6895-AIM.git
 cd E6895-AIM
+```
+
+2. Create a virtual environment
+```text
+python3 -m venv .venv
+source .venv/bin/activate    # Linux/macOS
+.venv\Scripts\activate       # Windows
+```
