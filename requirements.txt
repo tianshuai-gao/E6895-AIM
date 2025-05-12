@@ -1,1 +1,11 @@
+datasets
+pillow
+gradio
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+bitsandbytes
+typing-extensions
 
