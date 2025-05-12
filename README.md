@@ -40,23 +40,35 @@ Adaptive Intelligent Medical Multi-Agents: a dynamic multi-agent LLM framework s
 
 ```text
 E6895-AIM/
-├── data/
-│   ├── medqa.json
-│   ├── pubmedqa.json
-│   └── … (other dataset files)
-├── src/
-│   ├── agents/
-│   │   ├── vision_expert.py
-│   │   ├── difficulty_agent.py
-│   │   └── …
-│   ├── engine/
-│   │   └── discussion_engine.py
-│   ├── utils.py
-│   └── app.py
-├── tests/
-│   └── test_agents.py
-├── requirements.txt
 ├── README.md
-└── LICENSE
+├── LICENSE
+├── requirements.txt
+├── .gitignore
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── data/
+│   │   └── (If you have local test data, sample images, etc., put them here)
+│   │
+│   ├── agents/
+│   │   ├── __init__.py
+│   │   ├── vision_expert.py     
+│   │   ├── difficulty_agent.py   # Define DifficultyAgent
+│   │   ├── recruiter.py          # Define Recruiter
+│   │   ├── expert_agent.py       # Define ExpertAgent
+│   │   ├── challenger_agent.py   # Define ChallengerAgent
+│   │   └── moderator_agent.py    # Define ModeratorAgent
+│   │
+│   ├── engine/
+│   │   ├── __init__.py
+│   │   └── discussion_engine.py  # 定义 DiscussionEngine
+│   │
+│   ├── app.py                    # Gradio interface: start_discussion, next_round_step
+│   └── utils.py                  # Shared helpers, e.g., Hugging Face login, model loading, etc.
+│
+└── tests/
+    └── test_agents.py          
+
 
 
