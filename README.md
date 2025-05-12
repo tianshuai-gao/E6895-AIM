@@ -91,3 +91,24 @@ pip install -r requirements.txt
 ```text
 huggingface-cli login
 ```
+
+## Usage
+1. Command-Line Demo
+```text
+python src/app.py \
+  --image-path ./data/sample_mri.jpg \
+  --question "Is there evidence of hemorrhage?"
+```
+This will print:
+-Imaging report
+-Complexity label
+-Recruited team
+-Multi-round discussion logs
+-Final answer
+
+
+
+
+
+
+
