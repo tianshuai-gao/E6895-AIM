@@ -6,7 +6,7 @@ Adaptive Intelligent Medical Multi-Agents: a dynamic multi-agent LLM framework s
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 1. [Features](#features)  
 2. [Repository Structure](#repository-structure)  
@@ -45,30 +45,38 @@ E6895-AIM/
 ├── requirements.txt
 ├── .gitignore
 │
+├── data/
+│   └── sample_mri.jpg           # example image for quick test
+│
+├── docs/
+│   └── images/
+│       └── overview.png         # system overview diagram
+│
 ├── src/
 │   ├── __init__.py
-│   │
-│   ├── data/
-│   │   └── (If you have local test data, sample images, etc., put them here)
+│   ├── utils.py                 # helpers (HF login, model loading)
+│   ├── app.py                   # Gradio interface
 │   │
 │   ├── agents/
 │   │   ├── __init__.py
-│   │   ├── vision_expert.py     
-│   │   ├── difficulty_agent.py   # Define DifficultyAgent
-│   │   ├── recruiter.py          # Define Recruiter
-│   │   ├── expert_agent.py       # Define ExpertAgent
-│   │   ├── challenger_agent.py   # Define ChallengerAgent
-│   │   └── moderator_agent.py    # Define ModeratorAgent
+│   │   ├── vision_expert.py     # Define VisionExpert
+│   │   ├── difficulty_agent.py  # Define DifficultyAgent
+│   │   ├── recruiter.py         # Define Recruiter
+│   │   ├── expert_agent.py      # Define ExpertAgent
+│   │   ├── challenger_agent.py  # Define ChallengerAgent
+│   │   └── moderator_agent.py   # Define ModeratorAgent
 │   │
-│   ├── engine/
-│   │   ├── __init__.py
-│   │   └── discussion_engine.py  # 定义 DiscussionEngine
-│   │
-│   ├── app.py                    # Gradio interface: start_discussion, next_round_step
-│   └── utils.py                  # Shared helpers, e.g., Hugging Face login, model loading, etc.
+│   └── engine/
+│       ├── __init__.py
+│       └── discussion_engine.py # Define DiscussionEngine
 │
 └── tests/
-    └── test_agents.py          
+    └── test_agents.py           # pytest unit tests
 
 
+## Installation
 
+1. Clone the repository
+```text
+git clone https://github.com/tianshuai-gao/E6895-AIM.git
+cd E6895-AIM
