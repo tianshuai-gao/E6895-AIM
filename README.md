@@ -212,6 +212,36 @@ Then open http://localhost:7860:
 - enter a clinical question,
 - step through each discussion round interactively.
 
+## 7. Experiments & Reproducibility
+
+To reproduce the main results:
+
+1. **Prepare datasets**
+
+   - Download MedQA, PubMedQA, Path-VQA, PMC-VQA, MIMIC-CXR.
+   - Convert them into the JSON format expected by `src/utils.py` (see comments in the file).
+
+2. **Configure models**
+
+   In `src/utils.py` or via environment variables:
+
+   ```python
+   MODEL_LLMT = "your/text-backbone"
+   MODEL_VLM  = "your/vision-language-backbone"
+   export AIM_LLMT_MODEL="gpt-4o-mini"
+   export AIM_VLM_MODEL="openai/gpt-4o-vision-preview"
+   ```
+
+3. **Run evaluation**
+   ```python
+   python scripts/run_experiments.py \
+    --dataset medqa \
+    --setting adaptive \
+    --output results/medqa_adaptive.json
+   ```
+
+
+  
 
 
 
