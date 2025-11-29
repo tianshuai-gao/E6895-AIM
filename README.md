@@ -5,7 +5,7 @@
 Course project for **Columbia EECS6895 – Advanced Big Data and AI**.
 
 - 📄 **Project report (PDF)**: [`docs/AIM2_report.pdf`](docs/AIM2_report.pdf)
-- 🎥 **5-min overview video**: https://www.youtube.com/watch?v=HJUf1HcermQ
+- 🎥 **5-min overview video **: https://www.youtube.com/watch?v=HJUf1HcermQ
 - 💻 **Code**: this repository
 
 ---
