@@ -251,6 +251,8 @@ AIM² is a research prototype and:
 - has not been tested in real clinical workflows,
 - does not provide formal safety guarantees,
 - incurs additional cost and latency compared to single-agent baselines.
+
+  
 Please do not use this system for real medical decision-making.
 See the project report for a detailed discussion of limitations and future directions.
 
