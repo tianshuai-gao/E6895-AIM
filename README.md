@@ -39,7 +39,7 @@ The superscript “2” denotes the dual pillars of the system:
 
 ## 2. Method at a Glance
 
-AIM² operates in four stages. :contentReference[oaicite:6]{index=6}
+AIM² operates in four stages.
 
 ### 2.1 Stage 1 – Medical complexity check
 
@@ -80,7 +80,7 @@ For each round:
    - **escalate** (low → moderate → high).
 
 Round caps depend on complexity (e.g., low ≤ 2, moderate ≤ 4, high ≤ 4) and unresolved high-level cases
-are explicitly marked as **uncertain** instead of over-confident. :contentReference[oaicite:7]{index=7}
+are explicitly marked as **uncertain** instead of over-confident.
 
 ### 2.4 Stage 4 – Decision synthesis
 
@@ -90,13 +90,13 @@ A **SynthesisAgent** aggregates the notes and uncertainty flags to produce:
 - optionally a **patient-facing summary** (plain language, emphasising safety and follow-up).
 
 For moderate and high complexity cases the synthesis behaves like a **structured voting + narrative
-report**, giving more weight to well-supported views and surfacing key disagreements. :contentReference[oaicite:8]{index=8}
+report**, giving more weight to well-supported views and surfacing key disagreements.
 
 ---
 
 ## 3. Benchmarks & Main Results
 
-AIM² is evaluated on **five medical QA benchmarks** covering text-only and image+text reasoning: :contentReference[oaicite:9]{index=9}
+AIM² is evaluated on **five medical QA benchmarks** covering text-only and image+text reasoning:
 
 - **MedQA** – medical board-style multiple-choice questions.
 - **PubMedQA** – questions about whether a paper’s conclusion supports a statement.
@@ -120,7 +120,7 @@ We compare three settings:
 | PMC-VQA    | image+text | 53.4          | 42.6           | **55.1**     |
 | MIMIC-CXR  | image+text | 49.2          | 54.5           | **54.0**     |
 
-(Values reproduced from the project report; ± std omitted here for brevity.) :contentReference[oaicite:10]{index=10}  
+(Values reproduced from the project report; ± std omitted here for brevity.)
 
 ### 3.2 Ablation highlights
 
