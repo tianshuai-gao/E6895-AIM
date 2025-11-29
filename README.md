@@ -240,6 +240,19 @@ To reproduce the main results:
     --output results/medqa_adaptive.json
    ```
 
+4. **Run unit tests**
+   ```text
+   pytest -q
+   ```
+
+## 8. Limitations & Future Work
+AIM² is a research prototype and:
+- uses a single backbone LLM in current experiments,
+- has not been tested in real clinical workflows,
+- does not provide formal safety guarantees,
+- incurs additional cost and latency compared to single-agent baselines.
+Please do not use this system for real medical decision-making.
+See the project report for a detailed discussion of limitations and future directions.
 
   
 
