@@ -171,3 +171,17 @@ E6895-AIM/
 │
 └── tests/
     └── test_agents.py           # pytest unit tests
+```
+
+## Installation
+```text
+git clone https://github.com/tianshuai-gao/E6895-AIM.git
+cd E6895-AIM
+
+python3 -m venv .venv
+source .venv/bin/activate        # Linux / macOS
+# .venv\Scripts\activate         # Windows
+
+pip install -r requirements.txt
+huggingface-cli login            # if using HF models
+```
