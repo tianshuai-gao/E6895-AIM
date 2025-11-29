@@ -173,7 +173,7 @@ E6895-AIM/
     └── test_agents.py           # pytest unit tests
 ```
 
-## Installation
+## 5. Installation
 ```text
 git clone https://github.com/tianshuai-gao/E6895-AIM.git
 cd E6895-AIM
@@ -185,3 +185,39 @@ source .venv/bin/activate        # Linux / macOS
 pip install -r requirements.txt
 huggingface-cli login            # if using HF models
 ```
+
+
+## 6. Usage
+### 6.1 Command-line demo
+```text
+python src/app.py \
+  --image-path ./data/sample_mri.jpg \
+  --question "Is there evidence of hemorrhage?"
+```
+
+This prints:
+- imaging report
+- complexity label (low / moderate / high)
+- recruited team (GP / MDT / ICT)
+- multi-round discussion logs
+- final answer
+
+### 6.2 Gradio demo
+```text
+python -m src.app
+```
+
+Then open http://localhost:7860:
+- upload an image,
+- enter a clinical question,
+- step through each discussion round interactively.
+
+
+
+
+
+
+
+
+
+
