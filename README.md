@@ -256,7 +256,14 @@ AIM² is a research prototype and:
 Please do not use this system for real medical decision-making.
 See the project report for a detailed discussion of limitations and future directions.
 
-  
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+Tianshuai Gao
+- Email: tg2935@columbia.edu
+- GitHub: tianshuai-gao/E6895-AIM
 
 
 
